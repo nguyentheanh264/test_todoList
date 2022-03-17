@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+.app {
+    background: linear-gradient(40deg,#77008cb8,#041158d1);
+}
+.modal-update.open {
+    display: flex;
+}
+.modal-update {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-container {
+    width: 900px;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 2px;
+    animation: modalFadeIn ease 0.3s;
+}
+
+.form-group.invalid .form-control,
+.form-group.invalid .form-select {
+    border-color: #F0A500;
+}
+.form-group.invalid .form-message {
+    color: #F0A500;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+
